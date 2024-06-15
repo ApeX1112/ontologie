@@ -1,0 +1,5 @@
+<a href="{% url 'add' %}">ajouter un exercice</a>
+<hr>
+{% for exo in exos %}
+<a href="{% url 'details' exo.id %}">{{exo.nom_de_l_exercice}}</a><br>
+{% endfor %}
